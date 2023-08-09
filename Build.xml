@@ -2,5 +2,13 @@
 <project name="MyProject" default="build" basedir=".">
     <target name="build">
         <!-- Your build tasks here -->
+        <javac srcdir="src" destdir="build/classes"/>
+        <mkdir dir="build/jar"/>
+        <jar destfile="build/jar/MyProject.jar" basedir="build/classes">
+            <!-- Include additional resources or files if needed -->
+        </jar>
+
+        
+
     </target>
 </project>
