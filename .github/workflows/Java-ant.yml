@@ -24,10 +24,5 @@ jobs:
     - name: Build with Ant
       run:  ant -buildfile Build.xml
       
-    - name: Create Artifact Directory
-      run: mkdir -p artifacts
-
-    - name: Move JAR File to Artifacts
-      run: mv path/to/your/generated.jar artifacts/
-      
+   
        
